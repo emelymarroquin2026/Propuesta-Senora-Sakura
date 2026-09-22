@@ -1,0 +1,687 @@
+/* =========================================
+   SEÑORA SAKURA
+   GALERÍA
+   ========================================= */
+
+
+/* =========================================
+   GENERAL
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    background: #fffaf3;
+    color: #4c3b5d;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+/* =========================================
+   NAVBAR
+   MISMO DISEÑO DEL HOMEPAGE
+   ========================================= */
+
+.navbar {
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 5%;
+
+    background: #f4e9fa;
+    border-bottom: 1px solid #eadcf1;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+/* ---------- LOGO ---------- */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-flower {
+    font-size: 35px;
+}
+
+.logo h2 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 20px;
+    color: #513c68;
+}
+
+.logo span {
+    font-size: 11px;
+    display: block;
+    text-align: center;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    font-size: 14px;
+    color: #665575;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #684c8b;
+    font-weight: 700;
+}
+
+
+/* ---------- NAV BUTTONS ---------- */
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search {
+    width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+    border: none;
+
+    background: white;
+
+    font-size: 22px;
+
+    cursor: pointer;
+}
+
+.nav-btn {
+    background: #72558e;
+    color: white;
+
+    padding: 11px 20px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   HERO GALERÍA
+   ========================================= */
+
+.gallery-hero {
+    min-height: 390px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            110deg,
+            #fff6d9,
+            #f8eefa
+        );
+
+    padding: 60px 8%;
+}
+
+
+/* ---------- HERO DECORATIONS ---------- */
+
+.hero-flower {
+    position: absolute;
+
+    font-size: 65px;
+
+    opacity: 0.45;
+}
+
+.flower-left {
+    left: 8%;
+    bottom: 45px;
+
+    transform: rotate(-15deg);
+}
+
+.flower-right {
+    right: 8%;
+    top: 45px;
+
+    transform: rotate(15deg);
+}
+
+
+/* ---------- HERO CONTENT ---------- */
+
+.gallery-hero-content {
+    max-width: 720px;
+
+    position: relative;
+    z-index: 2;
+}
+
+.japanese-title {
+    display: block;
+
+    color: #6e4c91;
+
+    font-size: 17px;
+
+    margin-bottom: 12px;
+}
+
+.gallery-hero h1 {
+    font-family: "Quicksand", sans-serif;
+
+    font-size: clamp(48px, 6vw, 72px);
+
+    line-height: 1;
+
+    color: #62467e;
+
+    margin-bottom: 22px;
+}
+
+.gallery-hero h1 span {
+    color: #8561a5;
+}
+
+.gallery-hero p {
+    max-width: 600px;
+
+    margin: auto;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    color: #75667f;
+}
+
+
+/* =========================================
+   INTRODUCCIÓN
+   ========================================= */
+
+.gallery-intro {
+    max-width: 1350px;
+
+    margin: auto;
+
+    padding: 50px 5% 25px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+}
+
+.heading-icon {
+    font-size: 32px;
+}
+
+.section-heading h2 {
+    font-family: "Quicksand", sans-serif;
+
+    font-size: 30px;
+
+    color: #604671;
+
+    margin-bottom: 4px;
+}
+
+.section-heading p {
+    font-size: 14px;
+
+    color: #81738a;
+}
+
+
+/* =========================================
+   GALERÍA DE FOTOS
+   ========================================= */
+
+.photo-gallery {
+    max-width: 1350px;
+
+    margin: auto;
+
+    padding: 20px 5% 65px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-auto-rows: 220px;
+
+    gap: 16px;
+}
+
+
+/* ---------- TARJETAS ---------- */
+
+.photo-card {
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 22px;
+
+    background: #f2e6f8;
+
+    border: 1px solid #eadfea;
+
+    box-shadow:
+        0 8px 25px rgba(89, 62, 110, 0.08);
+
+    cursor: pointer;
+}
+
+.photo-card.large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+
+/* ---------- IMAGEN ---------- */
+
+.photo-card img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.photo-card:hover img {
+    transform: scale(1.07);
+}
+
+
+/* =========================================
+   INFORMACIÓN SOBRE LA FOTO
+   ========================================= */
+
+.photo-info {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+
+    padding: 55px 20px 20px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(70, 45, 78, 0.88)
+        );
+
+    transform: translateY(100%);
+
+    transition: 0.4s ease;
+}
+
+.photo-card:hover .photo-info {
+    transform: translateY(0);
+}
+
+.photo-info span {
+    font-size: 23px;
+}
+
+.photo-info h3 {
+    font-family: "Quicksand", sans-serif;
+
+    font-size: 19px;
+
+    margin: 5px 0;
+}
+
+.photo-info p {
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   MENSAJE FINAL
+   ========================================= */
+
+.gallery-message {
+    width: 100%;
+
+    text-align: center;
+
+    padding: 65px 20px;
+
+    background:
+        linear-gradient(
+            120deg,
+            #e9def5,
+            #f5e8f7
+        );
+}
+
+.message-decoration {
+    font-size: 34px;
+
+    margin-bottom: 8px;
+}
+
+.gallery-message h2 {
+    font-family: "Quicksand", sans-serif;
+
+    font-size: 32px;
+
+    color: #604671;
+
+    margin-bottom: 12px;
+}
+
+.gallery-message p {
+    max-width: 580px;
+
+    margin: 0 auto 25px;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    color: #76647e;
+}
+
+
+/* ---------- BOTÓN ---------- */
+
+.gallery-button {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    border-radius: 30px;
+
+    background: #76589a;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.gallery-button:hover {
+    transform: translateY(-3px);
+
+    background: #684c8b;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    background: #e9d8f2;
+
+    min-height: 80px;
+
+    padding: 25px 6%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    color: #634875;
+}
+
+.footer-logo {
+    font-size: 15px;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+.footer-socials {
+    font-size: 17px;
+}
+
+
+/* =========================================
+   TABLETS
+   ========================================= */
+
+@media (max-width: 1000px) {
+
+    nav {
+        gap: 15px;
+    }
+
+    .photo-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .photo-card.large {
+        grid-column: span 2;
+    }
+
+}
+
+
+/* =========================================
+   TABLETS PEQUEÑAS
+   ========================================= */
+
+@media (max-width: 750px) {
+
+    .navbar {
+        height: auto;
+
+        padding: 15px 5%;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    nav {
+        order: 3;
+
+        width: 100%;
+
+        justify-content: center;
+
+        overflow-x: auto;
+
+        padding-bottom: 5px;
+    }
+
+    .nav-buttons {
+        margin-left: auto;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+
+    /* HERO */
+
+    .gallery-hero {
+        min-height: 350px;
+
+        padding: 50px 8%;
+    }
+
+
+    /* GALERÍA */
+
+    .photo-gallery {
+        grid-template-columns: 1fr 1fr;
+
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+}
+
+
+/* =========================================
+   CELULARES
+   ========================================= */
+
+@media (max-width: 500px) {
+
+    .logo h2 {
+        font-size: 17px;
+    }
+
+    .search {
+        width: 32px;
+        height: 32px;
+    }
+
+    nav {
+        gap: 20px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+
+    /* HERO */
+
+    .gallery-hero h1 {
+        font-size: 48px;
+    }
+
+    .gallery-hero p {
+        font-size: 14px;
+    }
+
+    .hero-flower {
+        font-size: 45px;
+    }
+
+
+    /* INTRO */
+
+    .gallery-intro {
+        padding: 40px 5% 20px;
+    }
+
+    .section-heading h2 {
+        font-size: 26px;
+    }
+
+
+    /* GALERÍA */
+
+    .photo-gallery {
+        grid-template-columns: 1fr;
+
+        grid-auto-rows: 250px;
+
+        padding: 15px 5% 50px;
+    }
+
+    .photo-card.large {
+        grid-column: span 1;
+
+        grid-row: span 1;
+    }
+
+    /*
+       En celular dejamos visible
+       la información de las fotos.
+    */
+
+    .photo-info {
+        transform: translateY(0);
+
+        padding: 45px 15px 15px;
+    }
+
+
+    /* MENSAJE */
+
+    .gallery-message {
+        padding: 50px 20px;
+    }
+
+    .gallery-message h2 {
+        font-size: 27px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        flex-direction: column;
+
+        gap: 12px;
+
+        text-align: center;
+    }
+
+}
