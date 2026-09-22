@@ -1,0 +1,557 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffafc;
+    color: #625566;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    width: 100%;
+    padding: 18px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-bottom: 2px solid #f4e5ee;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo span {
+    font-size: 28px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-family: 'Baloo 2', cursive;
+    font-size: 25px;
+    color: #a879a8;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #655b65;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.navbar nav a:hover {
+    color: #b07eb0;
+}
+
+.navbar nav a.activo {
+    color: #b07eb0;
+    font-weight: 700;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 470px;
+    padding: 70px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #fff1f7, #f8f1ff, #fff9df);
+}
+
+.hero-texto {
+    max-width: 650px;
+}
+
+.etiqueta {
+    margin: 0;
+    color: #b57daf;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.hero h2 {
+    margin: 15px 0;
+    font-family: 'Baloo 2', cursive;
+    font-size: 52px;
+    line-height: 1.05;
+    color: #625566;
+}
+
+.hero h2 span {
+    display: block;
+    color: #b27bb0;
+}
+
+.descripcion {
+    max-width: 570px;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #776c78;
+}
+
+
+/* FLORES DEL HERO */
+
+.hero-flores {
+    width: 280px;
+    height: 280px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flor-grande {
+    width: 210px;
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 50%;
+    font-size: 100px;
+    box-shadow: 0 15px 35px rgba(165, 121, 165, 0.13);
+}
+
+.flor-pequena {
+    position: absolute;
+    font-size: 30px;
+}
+
+.flor-1 {
+    top: 10px;
+    right: 20px;
+}
+
+.flor-2 {
+    bottom: 15px;
+    left: 10px;
+}
+
+.flor-3 {
+    top: 80px;
+    right: -5px;
+    font-size: 20px;
+}
+
+
+/* HISTORIA */
+
+.historia {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 90px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.historia-imagen {
+    height: 430px;
+    overflow: hidden;
+    border-radius: 30px;
+    background-color: #f7eaf2;
+    box-shadow: 0 15px 35px rgba(110, 82, 105, 0.10);
+}
+
+.historia-imagen img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.historia-texto {
+    max-width: 520px;
+}
+
+.mini-titulo {
+    margin: 0 0 10px;
+    color: #b27bb0;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.historia-texto h2 {
+    margin: 0 0 20px;
+    font-family: 'Baloo 2', cursive;
+    font-size: 40px;
+    line-height: 1.1;
+    color: #655467;
+}
+
+.historia-texto h2 span {
+    display: block;
+    color: #b27bb0;
+}
+
+.historia-texto p:not(.mini-titulo) {
+    margin: 0 0 15px;
+    color: #807581;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.frase {
+    margin-top: 25px;
+    padding: 18px 22px;
+    background-color: #fff3d9;
+    border-radius: 18px;
+    color: #8b7186;
+    font-family: 'Baloo 2', cursive;
+    font-size: 18px;
+    text-align: center;
+}
+
+.frase span {
+    color: #c18bbb;
+    font-size: 28px;
+}
+
+
+/* MISION Y VISION */
+
+.mision-vision {
+    padding: 80px 8%;
+    background-color: #fdf3f8;
+}
+
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.titulo-seccion p {
+    margin: 0 0 8px;
+    color: #b27bb0;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.titulo-seccion h2 {
+    margin: 0;
+    font-family: 'Baloo 2', cursive;
+    font-size: 38px;
+    line-height: 1.1;
+    color: #665567;
+}
+
+.titulo-seccion h2 span {
+    color: #b27bb0;
+}
+
+.tarjetas-info {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.tarjeta-info {
+    padding: 35px 28px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #f3e2eb;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(110, 82, 105, 0.06);
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-info:hover {
+    transform: translateY(-7px);
+}
+
+.icono {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff3d9;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.tarjeta-info h3 {
+    margin: 0 0 10px;
+    font-family: 'Baloo 2', cursive;
+    font-size: 25px;
+    color: #665466;
+}
+
+.tarjeta-info p {
+    margin: 0;
+    color: #877b87;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* EXPERIENCIA */
+
+.experiencia {
+    padding: 90px 10%;
+    background: linear-gradient(135deg, #fffaf0, #f8f0ff);
+}
+
+.experiencia-contenido {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.experiencia h2 {
+    margin: 0 0 20px;
+    font-family: 'Baloo 2', cursive;
+    font-size: 40px;
+    line-height: 1.1;
+    color: #655467;
+}
+
+.experiencia h2 span {
+    color: #b27bb0;
+}
+
+.experiencia-contenido > p:not(.mini-titulo) {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #817580;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.detalles {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.detalles div {
+    min-width: 170px;
+    padding: 18px 22px;
+    background-color: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(110, 82, 105, 0.07);
+}
+
+.detalles strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+
+.detalles span {
+    color: #756a76;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* FINAL */
+
+.final {
+    padding: 75px 20px;
+    text-align: center;
+    background-color: #fff4dc;
+}
+
+.flor-final {
+    font-size: 35px;
+}
+
+.final h2 {
+    margin: 8px 0;
+    font-family: 'Baloo 2', cursive;
+    font-size: 38px;
+    line-height: 1.1;
+    color: #665466;
+}
+
+.final p {
+    margin: 0;
+    color: #887b82;
+    font-size: 14px;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #b583b2;
+    border-radius: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.boton:hover {
+    background-color: #9d6c9c;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 35px 20px;
+    text-align: center;
+    background-color: #f8eef5;
+}
+
+.logo-footer {
+    font-family: 'Baloo 2', cursive;
+    font-size: 21px;
+    font-weight: 700;
+    color: #a875a5;
+}
+
+footer p {
+    margin: 6px 0;
+    color: #857985;
+    font-size: 12px;
+}
+
+footer small {
+    display: block;
+    margin-top: 18px;
+    color: #a69aa6;
+    font-size: 10px;
+}
+
+
+/* TABLET */
+
+@media (max-width: 950px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero {
+        text-align: center;
+    }
+
+    .hero-texto {
+        max-width: 600px;
+    }
+
+    .hero {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .historia {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .historia-texto {
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .tarjetas-info {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 18px 20px;
+    }
+
+    .navbar nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 55px 20px;
+    }
+
+    .hero h2 {
+        font-size: 39px;
+    }
+
+    .descripcion {
+        font-size: 14px;
+    }
+
+    .hero-flores {
+        width: 220px;
+        height: 220px;
+    }
+
+    .flor-grande {
+        width: 160px;
+        height: 160px;
+        font-size: 75px;
+    }
+
+    .historia {
+        padding: 60px 20px;
+    }
+
+    .historia-imagen {
+        height: 300px;
+    }
+
+    .historia-texto h2 {
+        font-size: 33px;
+    }
+
+    .mision-vision {
+        padding: 60px 20px;
+    }
+
+    .titulo-seccion h2 {
+        font-size: 31px;
+    }
+
+    .experiencia {
+        padding: 60px 20px;
+    }
+
+    .experiencia h2 {
+        font-size: 32px;
+    }
+
+    .final {
+        padding: 60px 20px;
+    }
+
+}
