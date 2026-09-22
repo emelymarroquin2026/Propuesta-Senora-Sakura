@@ -1,0 +1,412 @@
+/* =========================================
+   SAKURA FAVORITES
+   ========================================= */
+
+.favorites-section {
+
+    max-width: 1350px;
+
+    margin: 30px auto;
+
+    padding: 60px 5%;
+
+    background: #f5eafa;
+
+    border-radius: 35px;
+
+}
+
+
+/* ---------- HEADER ---------- */
+
+.favorites-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    text-align: center;
+
+    margin-bottom: 35px;
+
+}
+
+
+.favorites-decoration {
+
+    font-size: 30px;
+
+}
+
+
+.favorites-small-title {
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    color: #8b68a8;
+
+}
+
+
+.favorites-header h2 {
+
+    font-family: "Quicksand", sans-serif;
+
+    font-size: 35px;
+
+    color: #604671;
+
+    margin: 4px 0;
+
+}
+
+
+.favorites-header p {
+
+    font-size: 14px;
+
+    color: #81738a;
+
+}
+
+
+/* ---------- CARDS ---------- */
+
+.favorites-container {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 22px;
+
+}
+
+
+.favorite-product {
+
+    background: white;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    border: 1px solid #eadfea;
+
+    box-shadow:
+        0 8px 25px
+        rgba(89, 62, 110, 0.07);
+
+    transition: 0.3s;
+
+}
+
+
+.favorite-product:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 15px 35px
+        rgba(89, 62, 110, 0.14);
+
+}
+
+
+/* ---------- IMAGE ---------- */
+
+.favorite-image {
+
+    height: 230px;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.favorite-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.4s;
+
+}
+
+
+.favorite-product:hover
+.favorite-image img {
+
+    transform: scale(1.05);
+
+}
+
+
+/* ---------- BADGE ---------- */
+
+.favorite-badge {
+
+    position: absolute;
+
+    top: 13px;
+
+    right: 13px;
+
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    background: #f3d6e3;
+
+    color: #65476d;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+}
+
+
+.favorite-badge.yellow {
+
+    background: #f8e7a7;
+
+    color: #68552e;
+
+}
+
+
+.favorite-badge.purple {
+
+    background: #dfd0ed;
+
+    color: #624676;
+
+}
+
+
+/* ---------- CONTENT ---------- */
+
+.favorite-content {
+
+    padding: 20px;
+
+}
+
+
+.favorite-category {
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    color: #9677aa;
+
+    margin-bottom: 7px;
+
+}
+
+
+.favorite-content h3 {
+
+    font-family: "Quicksand", sans-serif;
+
+    font-size: 21px;
+
+    color: #594565;
+
+    margin-bottom: 7px;
+
+}
+
+
+.favorite-content p {
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    color: #83768b;
+
+    min-height: 40px;
+
+    margin-bottom: 18px;
+
+}
+
+
+/* ---------- PRICE ---------- */
+
+.favorite-bottom {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+.favorite-bottom strong {
+
+    font-size: 19px;
+
+    color: #765292;
+
+}
+
+
+.favorite-heart {
+
+    width: 35px;
+
+    height: 35px;
+
+    border-radius: 50%;
+
+    background: #faf0f8;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 20px;
+
+    color: #765292;
+
+}
+
+
+/* ---------- BUTTON ---------- */
+
+.favorites-button {
+
+    text-align: center;
+
+    margin-top: 30px;
+
+}
+
+
+.favorites-button a {
+
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    border-radius: 30px;
+
+    background: #76589a;
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    transition: 0.3s;
+
+}
+
+
+.favorites-button a:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 18px
+        rgba(118, 88, 154, 0.25);
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 850px) {
+
+    .favorites-container {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .favorites-section {
+
+        margin: 20px 15px;
+
+        padding: 40px 20px;
+
+        border-radius: 25px;
+
+    }
+
+
+    .favorites-header {
+
+        gap: 8px;
+
+    }
+
+
+    .favorites-decoration {
+
+        font-size: 22px;
+
+    }
+
+
+    .favorites-header h2 {
+
+        font-size: 28px;
+
+    }
+
+
+    .favorites-header p {
+
+        font-size: 12px;
+
+    }
+
+
+    .favorites-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .favorite-image {
+
+        height: 250px;
+
+    }
+
+}

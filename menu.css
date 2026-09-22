@@ -1,0 +1,680 @@
+/* ==========================================
+   SEÑORA SAKURA
+   PÁGINA DE MENÚ
+   ========================================== */
+
+
+/* ---------- GENERAL ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    background: #fffaf3;
+    color: #554161;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+/* ==========================================
+   NAVBAR
+   ========================================== */
+
+.navbar {
+    width: 100%;
+    height: 80px;
+
+    padding: 0 6%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #f4e9fa;
+
+    border-bottom: 1px solid #eadcf1;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+}
+
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-flower {
+    font-size: 34px;
+}
+
+.logo strong {
+    font-family: "Quicksand", sans-serif;
+
+    font-size: 19px;
+
+    color: #513c68;
+
+    display: block;
+}
+
+.logo small {
+    display: block;
+
+    text-align: center;
+
+    font-size: 10px;
+
+    color: #71587e;
+}
+
+
+/* Navigation */
+
+nav {
+    display: flex;
+
+    gap: 30px;
+}
+
+nav a {
+    font-size: 13px;
+
+    color: #665575;
+
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #76589a;
+
+    font-weight: 800;
+}
+
+
+/* Visit button */
+
+.visit-btn {
+    background: #76589a;
+
+    color: white;
+
+    padding: 11px 20px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+.visit-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ==========================================
+   HERO
+   ========================================== */
+
+.menu-hero {
+    max-width: 1250px;
+
+    margin: 28px auto 20px;
+
+    padding: 50px 7%;
+
+    border-radius: 30px;
+
+    background:
+        linear-gradient(
+            110deg,
+            #fff2c8,
+            #eee2f8
+        );
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+/* Hero text */
+
+.japanese {
+    color: #76589a;
+
+    font-size: 14px;
+}
+
+.menu-hero h1 {
+    font-family: "Quicksand", sans-serif;
+
+    font-size: clamp(48px, 6vw, 75px);
+
+    line-height: 1;
+
+    color: #604671;
+
+    margin: 8px 0 15px;
+}
+
+.menu-hero h1 span {
+    color: #8b68a8;
+}
+
+.menu-hero p {
+    max-width: 550px;
+
+    color: #786a82;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+
+/* Hero decoration */
+
+.menu-hero-decoration {
+    text-align: center;
+
+    transform: rotate(7deg);
+}
+
+.big-mochi {
+    font-size: 105px;
+}
+
+.little-sakura {
+    font-size: 18px;
+
+    margin-top: -10px;
+}
+
+.japanese-small {
+    font-size: 13px;
+
+    color: #76589a;
+}
+
+
+/* ==========================================
+   CATEGORIES
+   ========================================== */
+
+.categories {
+    max-width: 1250px;
+
+    margin: 0 auto 40px;
+
+    padding: 0 20px;
+
+    display: flex;
+
+    gap: 10px;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+.category {
+    padding: 12px 22px;
+
+    border-radius: 30px;
+
+    background: white;
+
+    border: 1px solid #eadfea;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    color: #684c78;
+
+    transition: 0.25s;
+}
+
+.category:hover,
+.category.active {
+    background: #76589a;
+
+    color: white;
+
+    border-color: #76589a;
+}
+
+
+/* ==========================================
+   SECCIONES DEL MENÚ
+   ========================================== */
+
+.menu-section {
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    padding: 30px 20px 45px;
+}
+
+
+/* Título */
+
+.section-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 22px;
+}
+
+.section-title > span {
+    font-size: 32px;
+}
+
+.section-title h2 {
+    font-family: "Quicksand", sans-serif;
+
+    font-size: 30px;
+
+    color: #604671;
+}
+
+.section-title p {
+    font-size: 13px;
+
+    color: #897c91;
+
+    margin-top: 3px;
+}
+
+
+/* ==========================================
+   PRODUCTOS
+   ========================================== */
+
+.products {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+/* Card */
+
+.product {
+    background: white;
+
+    border: 1px solid #eadfea;
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(89, 62, 110, 0.07);
+
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 35px rgba(89, 62, 110, 0.14);
+}
+
+
+/* Image */
+
+.product-image {
+    height: 240px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.4s;
+}
+
+.product:hover .product-image img {
+    transform: scale(1.04);
+}
+
+
+/* Badge */
+
+.badge {
+    position: absolute;
+
+    top: 12px;
+
+    right: 12px;
+
+    background: #f3d6e3;
+
+    color: #65476d;
+
+    padding: 7px 11px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: 800;
+}
+
+.badge.yellow {
+    background: #f8e7a7;
+
+    color: #68552e;
+}
+
+
+/* Product information */
+
+.product-info {
+    padding: 17px;
+}
+
+.product-info h3 {
+    font-size: 17px;
+
+    color: #594565;
+
+    margin-bottom: 5px;
+}
+
+.product-info p {
+    font-size: 12px;
+
+    color: #83768b;
+
+    line-height: 1.5;
+
+    min-height: 37px;
+
+    margin-bottom: 13px;
+}
+
+
+/* Price */
+
+.product-bottom {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.product-bottom strong {
+    font-size: 18px;
+
+    color: #765292;
+}
+
+
+/* Heart */
+
+.heart {
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+
+    background: #faf0f8;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 18px;
+
+    color: #765292;
+}
+
+
+/* ==========================================
+   SPECIAL BANNER
+   ========================================== */
+
+.special-banner {
+    max-width: 1210px;
+
+    margin: 20px auto 55px;
+
+    padding: 30px 40px;
+
+    border-radius: 27px;
+
+    background: #f8e8a8;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.special-banner span {
+    font-size: 25px;
+}
+
+.special-banner h2 {
+    font-family: "Quicksand", sans-serif;
+
+    font-size: 25px;
+
+    color: #604671;
+
+    margin: 3px 0;
+}
+
+.special-banner p {
+    font-size: 13px;
+
+    color: #786a63;
+}
+
+.special-banner a {
+    background: #76589a;
+
+    color: white;
+
+    padding: 12px 20px;
+
+    border-radius: 25px;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    transition: 0.3s;
+}
+
+.special-banner a:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+
+footer {
+    background: #e9d8f2;
+
+    min-height: 80px;
+
+    padding: 25px 6%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    color: #634875;
+
+    font-size: 12px;
+}
+
+.footer-logo {
+    font-size: 15px;
+}
+
+.socials {
+    font-size: 17px;
+}
+
+
+/* ==========================================
+   TABLET
+   ========================================== */
+
+@media (max-width: 800px) {
+
+    nav {
+        gap: 13px;
+    }
+
+    .visit-btn {
+        display: none;
+    }
+
+    .menu-hero {
+        margin: 15px;
+
+        padding: 40px 8%;
+    }
+
+    .big-mochi {
+        font-size: 70px;
+    }
+
+    .products {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .special-banner {
+        margin: 10px 20px 40px;
+    }
+
+}
+
+
+/* ==========================================
+   CELULAR
+   ========================================== */
+
+@media (max-width: 550px) {
+
+    .navbar {
+        height: auto;
+
+        flex-wrap: wrap;
+
+        padding: 14px 5%;
+
+        gap: 12px;
+    }
+
+    nav {
+        order: 3;
+
+        width: 100%;
+
+        overflow-x: auto;
+
+        justify-content: center;
+
+        padding-bottom: 4px;
+    }
+
+
+    .menu-hero {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+    .menu-hero-decoration {
+        align-self: center;
+    }
+
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .product-image {
+        height: 260px;
+    }
+
+
+    .special-banner {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    footer {
+        flex-direction: column;
+
+        gap: 10px;
+
+        text-align: center;
+    }
+
+}
