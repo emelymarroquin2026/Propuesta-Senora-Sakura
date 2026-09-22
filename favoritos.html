@@ -1,201 +1,270 @@
-<!-- ================= FAVORITOS ================= -->
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<section class="favorites-section">
+    <title>Favoritos | Señora Sakura</title>
 
-    <div class="favorites-header">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        <span class="favorites-decoration">
-            🌸
-        </span>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-        <div>
-            <span class="favorites-small-title">
-                SAKURA LOVES ♡
-            </span>
+    <link rel="stylesheet" href="favoritos.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span>🌸</span>
+            <h1>Señora Sakura</h1>
+        </div>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="menu.html">Menú</a>
+            <a href="favoritos.html" class="activo">Favoritos</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="galeria.html">Galería</a>
+            <a href="visitanos.html">Visítanos</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-contenido">
+
+                <p class="etiqueta">🌸 LOS MÁS QUERIDOS 🌸</p>
+
+                <h2>
+                    Favoritos de
+                    <span>Señora Sakura</span>
+                </h2>
+
+                <p class="descripcion">
+                    Descubre los sabores que nuestros clientes
+                    disfrutan una y otra vez. ¡Hay un favorito
+                    para cada corazón!
+                </p>
+
+            </div>
+
+            <div class="flor">
+                🌸
+            </div>
+
+        </section>
+
+
+        <section class="seccion-favoritos">
+
+            <div class="titulo">
+
+                <span>🎀</span>
+
+                <h2>Los favoritos de Sakura</h2>
+
+                <p>
+                    Pequeños antojos, grandes momentos 💕
+                </p>
+
+            </div>
+
+
+            <div class="productos">
+
+
+                <article class="tarjeta">
+
+                    <div class="imagen">
+
+                        <img src="img/mochi.jpg" alt="Mochi Sakura">
+
+                        <span class="corazon">♥</span>
+
+                        <span class="etiqueta-producto">
+                            ✨ Favorito
+                        </span>
+
+                    </div>
+
+                    <div class="contenido">
+
+                        <p class="categoria">
+                            🍡 DULCE JAPONÉS
+                        </p>
+
+                        <h3>Mochi Sakura</h3>
+
+                        <p>
+                            Suave, dulce y delicioso. Un pequeño
+                            bocado japonés perfecto para acompañar
+                            tu momento Sakura.
+                        </p>
+
+                        <strong>$2.50</strong>
+
+                    </div>
+
+                </article>
+
+
+                <article class="tarjeta">
+
+                    <div class="imagen">
+
+                        <img src="img/taiyaki.jpg" alt="Taiyaki">
+
+                        <span class="corazon">♥</span>
+
+                        <span class="etiqueta-producto">
+                            🌸 Popular
+                        </span>
+
+                    </div>
+
+                    <div class="contenido">
+
+                        <p class="categoria">
+                            🐟 POSTRE JAPONÉS
+                        </p>
+
+                        <h3>Taiyaki</h3>
+
+                        <p>
+                            Delicioso pastelito japonés en forma
+                            de pez, preparado para llenar tu día
+                            de dulzura.
+                        </p>
+
+                        <strong>$3.00</strong>
+
+                    </div>
+
+                </article>
+
+
+                <article class="tarjeta">
+
+                    <div class="imagen">
+
+                        <img src="img/bebida.jpg" alt="Bebida Sakura">
+
+                        <span class="corazon">♥</span>
+
+                        <span class="etiqueta-producto">
+                            💜 Top
+                        </span>
+
+                    </div>
+
+                    <div class="contenido">
+
+                        <p class="categoria">
+                            🧋 BEBIDA
+                        </p>
+
+                        <h3>Sakura Drink</h3>
+
+                        <p>
+                            Una bebida refrescante y colorida
+                            para acompañar tus postres favoritos.
+                        </p>
+
+                        <strong>$3.50</strong>
+
+                    </div>
+
+                </article>
+
+
+                <article class="tarjeta">
+
+                    <div class="imagen">
+
+                        <img src="img/combo.jpg" alt="Sweet Sakura Combo">
+
+                        <span class="corazon">♥</span>
+
+                        <span class="etiqueta-producto">
+                            🎀 Especial
+                        </span>
+
+                    </div>
+
+                    <div class="contenido">
+
+                        <p class="categoria">
+                            🍱 COMBO
+                        </p>
+
+                        <h3>Sweet Sakura Combo</h3>
+
+                        <p>
+                            Una combinación especial para disfrutar
+                            tus sabores favoritos en un solo lugar.
+                        </p>
+
+                        <strong>$5.50</strong>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section class="final">
+
+            <div class="flor-final">
+                🌸
+            </div>
 
             <h2>
-                Nuestros favoritos
+                ¿Ya encontraste
+                <br>
+                tu favorito?
             </h2>
 
             <p>
-                Los sabores que hacen que nuestros
-                visitantes vuelvan por más.
+                Ven a Señora Sakura y descubre tu nuevo
+                antojo favorito. 💕
             </p>
+
+            <a href="menu.html" class="boton">
+                Ver todo el menú 🍡
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="logo-footer">
+            🌸 Señora Sakura
         </div>
 
-        <span class="favorites-decoration">
-            🌸
-        </span>
+        <p>
+            Sabores asiáticos, momentos especiales 💕
+        </p>
 
-    </div>
+        <small>
+            © 2026 Señora Sakura. Todos los derechos reservados.
+        </small>
 
+    </footer>
 
-    <div class="favorites-container">
-
-
-        <!-- FAVORITO 1 -->
-
-        <article class="favorite-product">
-
-            <div class="favorite-image">
-
-                <img
-                    src="img/mochi.jpg"
-                    alt="Mochi Sakura"
-                >
-
-                <span class="favorite-badge">
-                    ♡ Favorite
-                </span>
-
-            </div>
-
-
-            <div class="favorite-content">
-
-                <div class="favorite-category">
-                    🍡 POSTRE
-                </div>
-
-                <h3>
-                    Mochi Sakura
-                </h3>
-
-                <p>
-                    Suave, dulce y perfecto para
-                    acompañar tu momento Sakura.
-                </p>
-
-
-                <div class="favorite-bottom">
-
-                    <strong>
-                        $3.50
-                    </strong>
-
-                    <span class="favorite-heart">
-                        ♡
-                    </span>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-
-        <!-- FAVORITO 2 -->
-
-        <article class="favorite-product">
-
-            <div class="favorite-image">
-
-                <img
-                    src="img/taiyaki.jpg"
-                    alt="Taiyaki de Matcha"
-                >
-
-                <span class="favorite-badge yellow">
-                    ✨ Popular
-                </span>
-
-            </div>
-
-
-            <div class="favorite-content">
-
-                <div class="favorite-category">
-                    🐟 JAPANESE SWEET
-                </div>
-
-                <h3>
-                    Taiyaki de Matcha
-                </h3>
-
-                <p>
-                    Un clásico japonés con una
-                    textura doradita y relleno cremoso.
-                </p>
-
-
-                <div class="favorite-bottom">
-
-                    <strong>
-                        $4.00
-                    </strong>
-
-                    <span class="favorite-heart">
-                        ♡
-                    </span>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-
-        <!-- FAVORITO 3 -->
-
-        <article class="favorite-product">
-
-            <div class="favorite-image">
-
-                <img
-                    src="img/bebida.jpg"
-                    alt="Taro Latte"
-                >
-
-                <span class="favorite-badge purple">
-                    💜 Must try
-                </span>
-
-            </div>
-
-
-            <div class="favorite-content">
-
-                <div class="favorite-category">
-                    🧋 BEBIDA
-                </div>
-
-                <h3>
-                    Taro Latte
-                </h3>
-
-                <p>
-                    Cremoso, dulce y con ese
-                    característico color morado.
-                </p>
-
-
-                <div class="favorite-bottom">
-
-                    <strong>
-                        $3.75
-                    </strong>
-
-                    <span class="favorite-heart">
-                        ♡
-                    </span>
-
-                </div>
-
-            </div>
-
-        </article>
-
-    </div>
-
-
-    <div class="favorites-button">
-
-        <a href="menu.html">
-            Ver todo el menú →
-        </a>
-
-    </div>
-
-</section>
+</body>
+</html>

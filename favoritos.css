@@ -1,412 +1,411 @@
-/* =========================================
-   SAKURA FAVORITES
-   ========================================= */
+* {
+    box-sizing: border-box;
+}
 
-.favorites-section {
-
-    max-width: 1350px;
-
-    margin: 30px auto;
-
-    padding: 60px 5%;
-
-    background: #f5eafa;
-
-    border-radius: 35px;
-
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffafc;
+    color: #625566;
 }
 
 
-/* ---------- HEADER ---------- */
+/* NAVBAR */
 
-.favorites-header {
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    gap: 18px;
-
-    text-align: center;
-
-    margin-bottom: 35px;
-
-}
-
-
-.favorites-decoration {
-
-    font-size: 30px;
-
-}
-
-
-.favorites-small-title {
-
-    font-size: 11px;
-
-    font-weight: 800;
-
-    letter-spacing: 2px;
-
-    color: #8b68a8;
-
-}
-
-
-.favorites-header h2 {
-
-    font-family: "Quicksand", sans-serif;
-
-    font-size: 35px;
-
-    color: #604671;
-
-    margin: 4px 0;
-
-}
-
-
-.favorites-header p {
-
-    font-size: 14px;
-
-    color: #81738a;
-
-}
-
-
-/* ---------- CARDS ---------- */
-
-.favorites-container {
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 22px;
-
-}
-
-
-.favorite-product {
-
-    background: white;
-
-    border-radius: 25px;
-
-    overflow: hidden;
-
-    border: 1px solid #eadfea;
-
-    box-shadow:
-        0 8px 25px
-        rgba(89, 62, 110, 0.07);
-
-    transition: 0.3s;
-
-}
-
-
-.favorite-product:hover {
-
-    transform: translateY(-7px);
-
-    box-shadow:
-        0 15px 35px
-        rgba(89, 62, 110, 0.14);
-
-}
-
-
-/* ---------- IMAGE ---------- */
-
-.favorite-image {
-
-    height: 230px;
-
-    position: relative;
-
-    overflow: hidden;
-
-}
-
-
-.favorite-image img {
-
+.navbar {
     width: 100%;
-
-    height: 100%;
-
-    object-fit: cover;
-
-    transition: 0.4s;
-
-}
-
-
-.favorite-product:hover
-.favorite-image img {
-
-    transform: scale(1.05);
-
-}
-
-
-/* ---------- BADGE ---------- */
-
-.favorite-badge {
-
-    position: absolute;
-
-    top: 13px;
-
-    right: 13px;
-
-    padding: 7px 12px;
-
-    border-radius: 20px;
-
-    background: #f3d6e3;
-
-    color: #65476d;
-
-    font-size: 11px;
-
-    font-weight: 800;
-
-}
-
-
-.favorite-badge.yellow {
-
-    background: #f8e7a7;
-
-    color: #68552e;
-
-}
-
-
-.favorite-badge.purple {
-
-    background: #dfd0ed;
-
-    color: #624676;
-
-}
-
-
-/* ---------- CONTENT ---------- */
-
-.favorite-content {
-
-    padding: 20px;
-
-}
-
-
-.favorite-category {
-
-    font-size: 10px;
-
-    font-weight: 800;
-
-    letter-spacing: 1px;
-
-    color: #9677aa;
-
-    margin-bottom: 7px;
-
-}
-
-
-.favorite-content h3 {
-
-    font-family: "Quicksand", sans-serif;
-
-    font-size: 21px;
-
-    color: #594565;
-
-    margin-bottom: 7px;
-
-}
-
-
-.favorite-content p {
-
-    font-size: 12px;
-
-    line-height: 1.6;
-
-    color: #83768b;
-
-    min-height: 40px;
-
-    margin-bottom: 18px;
-
-}
-
-
-/* ---------- PRICE ---------- */
-
-.favorite-bottom {
-
+    padding: 18px 7%;
     display: flex;
-
+    align-items: center;
     justify-content: space-between;
-
-    align-items: center;
-
+    background-color: #ffffff;
+    border-bottom: 2px solid #f4e5ee;
 }
 
-
-.favorite-bottom strong {
-
-    font-size: 19px;
-
-    color: #765292;
-
-}
-
-
-.favorite-heart {
-
-    width: 35px;
-
-    height: 35px;
-
-    border-radius: 50%;
-
-    background: #faf0f8;
-
+.logo {
     display: flex;
-
     align-items: center;
+    gap: 8px;
+}
 
-    justify-content: center;
+.logo span {
+    font-size: 28px;
+}
 
-    font-size: 20px;
+.logo h1 {
+    margin: 0;
+    font-family: 'Baloo 2', cursive;
+    font-size: 25px;
+    color: #a879a8;
+}
 
-    color: #765292;
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
 
+.navbar nav a {
+    text-decoration: none;
+    color: #655b65;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.navbar nav a:hover {
+    color: #b07eb0;
+}
+
+.navbar nav a.activo {
+    color: #b07eb0;
+    font-weight: 700;
 }
 
 
-/* ---------- BUTTON ---------- */
+/* HERO */
 
-.favorites-button {
-
-    text-align: center;
-
-    margin-top: 30px;
-
+.hero {
+    min-height: 390px;
+    padding: 60px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #fff1f7, #f8f1ff, #fff9df);
 }
 
+.hero-contenido {
+    max-width: 650px;
+}
 
-.favorites-button a {
-
-    display: inline-block;
-
-    padding: 13px 25px;
-
-    border-radius: 30px;
-
-    background: #76589a;
-
-    color: white;
-
+.etiqueta {
+    margin: 0;
+    color: #b57daf;
     font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
 
-    font-weight: 800;
+.hero h2 {
+    margin: 15px 0;
+    font-family: 'Baloo 2', cursive;
+    font-size: 55px;
+    line-height: 1.05;
+    color: #625566;
+}
 
-    transition: 0.3s;
+.hero h2 span {
+    display: block;
+    color: #b27bb0;
+}
 
+.descripcion {
+    max-width: 550px;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #776c78;
+}
+
+.flor {
+    width: 210px;
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 50%;
+    font-size: 95px;
+    box-shadow: 0 15px 35px rgba(165, 121, 165, 0.12);
 }
 
 
-.favorites-button a:hover {
+/* SECCION FAVORITOS */
 
-    transform: translateY(-3px);
+.seccion-favoritos {
+    padding: 70px 8%;
+}
 
-    box-shadow:
-        0 8px 18px
-        rgba(118, 88, 154, 0.25);
+.titulo {
+    text-align: center;
+    margin-bottom: 45px;
+}
 
+.titulo > span {
+    font-size: 30px;
+}
+
+.titulo h2 {
+    margin: 5px 0;
+    font-family: 'Baloo 2', cursive;
+    font-size: 35px;
+    color: #665567;
+}
+
+.titulo p {
+    margin: 0;
+    font-size: 14px;
+    color: #9a8d9a;
 }
 
 
-/* =========================================
-   RESPONSIVE
-   ========================================= */
+/* PRODUCTOS */
 
-@media (max-width: 850px) {
-
-    .favorites-container {
-
-        grid-template-columns:
-            repeat(2, 1fr);
-
-    }
-
+.productos {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
 }
 
 
-@media (max-width: 550px) {
+/* TARJETAS */
 
-    .favorites-section {
+.tarjeta {
+    background-color: #ffffff;
+    border: 1px solid #f4e7ef;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(110, 82, 105, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-        margin: 20px 15px;
+.tarjeta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(110, 82, 105, 0.13);
+}
 
-        padding: 40px 20px;
 
-        border-radius: 25px;
+/* IMAGENES */
 
+.imagen {
+    height: 210px;
+    position: relative;
+    overflow: hidden;
+    background-color: #f8edf4;
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.tarjeta:hover .imagen img {
+    transform: scale(1.06);
+}
+
+
+/* CORAZON */
+
+.corazon {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 50%;
+    color: #d58db4;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ETIQUETA DEL PRODUCTO */
+
+.etiqueta-producto {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    padding: 6px 11px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    color: #a675a4;
+    font-size: 11px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* CONTENIDO DE TARJETA */
+
+.contenido {
+    padding: 20px;
+}
+
+.categoria {
+    margin: 0;
+    color: #b586b3;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+}
+
+.contenido h3 {
+    margin: 7px 0;
+    font-family: 'Baloo 2', cursive;
+    font-size: 24px;
+    color: #625463;
+}
+
+.contenido p:not(.categoria) {
+    min-height: 75px;
+    margin: 0;
+    color: #877c87;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.contenido strong {
+    display: block;
+    margin-top: 12px;
+    color: #b27bae;
+    font-size: 18px;
+}
+
+
+/* SECCION FINAL */
+
+.final {
+    padding: 70px 20px;
+    text-align: center;
+    background-color: #fff4dc;
+}
+
+.flor-final {
+    font-size: 35px;
+}
+
+.final h2 {
+    margin: 8px 0;
+    font-family: 'Baloo 2', cursive;
+    font-size: 38px;
+    line-height: 1.1;
+    color: #665466;
+}
+
+.final p {
+    margin: 0;
+    color: #887b82;
+    font-size: 14px;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #b583b2;
+    border-radius: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.boton:hover {
+    background-color: #9d6c9c;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 35px 20px;
+    text-align: center;
+    background-color: #f8eef5;
+}
+
+.logo-footer {
+    font-family: 'Baloo 2', cursive;
+    font-size: 21px;
+    font-weight: 700;
+    color: #a875a5;
+}
+
+footer p {
+    margin: 6px 0;
+    color: #857985;
+    font-size: 12px;
+}
+
+footer small {
+    display: block;
+    margin-top: 18px;
+    color: #a69aa6;
+    font-size: 10px;
+}
+
+
+/* TABLET */
+
+@media (max-width: 950px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
     }
 
-
-    .favorites-header {
-
-        gap: 8px;
-
+    .productos {
+        grid-template-columns: repeat(2, 1fr);
     }
 
+    .hero h2 {
+        font-size: 45px;
+    }
+}
 
-    .favorites-decoration {
 
-        font-size: 22px;
+/* CELULAR */
 
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 18px 20px;
     }
 
-
-    .favorites-header h2 {
-
-        font-size: 28px;
-
+    .navbar nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
     }
 
-
-    .favorites-header p {
-
-        font-size: 12px;
-
+    .hero {
+        padding: 50px 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 35px;
     }
 
+    .hero h2 {
+        font-size: 40px;
+    }
 
-    .favorites-container {
+    .descripcion {
+        margin: 0 auto;
+    }
 
+    .flor {
+        width: 150px;
+        height: 150px;
+        font-size: 70px;
+    }
+
+    .seccion-favoritos {
+        padding: 50px 20px;
+    }
+
+    .productos {
         grid-template-columns: 1fr;
-
     }
 
-
-    .favorite-image {
-
-        height: 250px;
-
+    .titulo h2 {
+        font-size: 30px;
     }
-
 }
